@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FAFAFA;
+}
+
+html, body{
+	font: 1.2em 'Bitter', serif;
+    background: white;
+	background: radial-gradient(circle, #fff 20%, #ccc);
+	background-size: cover;
+    
+}
+
+.flexWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bang{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: url('../imgs/bang.gif');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #FAFAFA;
+    border-radius: 50%;
+}
+
+.container{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    color: #E3E3E3;
+    margin: 10px auto;
+    padding: 20px 20px 9px;
+    background: #9dd2ea;
+    background: linear-gradient(#009bfb,#0077C0);
+    border-radius: 3px;
+    box-shadow: 0px 4px #009bfb, 0px 10px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.marked{
+    background-image: url('../imgs/flag.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+
+}
+
+.mine{
+    background-image: url('../imgs/mine.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+}
+
+.playAgain{
+    display: none;
+    margin: 10px auto;
+    box-shadow: 0px 4px #9DE5FF;
+    cursor: pointer;
+    width: 30%;
+    height: 36px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    color: #888;
+    line-height: 36px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.easy , .medium , .hard , .btn{
+    margin: 10px auto;
+    box-shadow: 0px 4px #9DE5FF !important;
+    cursor: pointer;
+    width: 20%;
+    padding: 0.5%;
+    height: 36px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    color: #888;
+    line-height: 36px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.easy:hover , .btn:hover{
+    background: #A3DE83;
+	box-shadow: 0px 4px #2EB872  !important;
+	color: white;
+}
+.medium:hover{
+    background: #FCB040;
+	box-shadow: 0px 4px #DE703B  !important;
+	color: white;
+}
+.hard:hover{
+  background: #911F27;
+	box-shadow: 0px 4px #630A10 !important;
+	color: white;
+}
+
+.playAgain:hover{
+    background: #A3DE83;
+	box-shadow: 0px 4px #2EB872  !important;
+	color: white;
+}
+
+table{
+    display: none;
+    width: 50%;
+    margin: 10px auto;
+    height: 300px;
+    border-spacing: 0px;
+}
+
+table, th, td {
+    border: 1px solid #bdbdbd;
+}
+td{
+    width: 24px;
+	height: 36px;
+    user-select: none;
+}
+
+.hidden{
+	background: #e5e5e5;
+	border: outset 1px #e5e5e5;
+	margin: 0 7px 11px 0;
+	color: #888;
+	line-height: 36px;
+	/* prevent selection of text inside keys */
+	transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+.screens div{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+@media screen and (max-width: 850px) {
+    .container ,table{
+        width: 100%;
+    }
+    .playAgain{
+        width: auto;
+    }
+}

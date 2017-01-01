@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mine Sweeper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shake.css">
+</head>
+
+<body onload="getUser()">
+    <div class="flexWrapper">
+        <div class="bang"></div>
+        <div class="container">
+            <h1>Mine Sweeper</h1>
+            <div class="wrapper">
+                <div class="userArea">
+                    <h2>Welcome <span id="userName"></span></h2>
+                    <span class="btn" onclick="changeUser()">Not you?</span>
+                    <h3 id="bestScore"></h3>
+                </div>
+                <div class="difficulties">
+                    <h2>Select diffuclty</h2>
+                    <div class="difficultiesButtons">
+                        <span class="easy" onclick="playerDifficulty(this)">Easy</span>
+                        <span class="medium" onclick="playerDifficulty(this)">Medium</span>
+                        <span class="hard" onclick="playerDifficulty(this)">Hard</span>
+                    </div>
+                </div>
+                <h2 id="messages"></h2>
+                <span class="playAgain" onclick="resetGame()">Start new game</span>
+                <div class="screens">
+
+                    <div>Timer: <span id="spanTimer"></span></div>
+                    <div>Flags: <span id="flagsCount"></span></div>
+                </div>
+            </div>
+            <table class="boardGame" oncontextmenu="return false">
+                <tbody id="mineSweeperBoard"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
