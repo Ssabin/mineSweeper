@@ -1,1 +1,4 @@
+.DS_Store
 CodingGames-Step1-MineSweeper.pdf
+node_modules/
+npm-debug.log
